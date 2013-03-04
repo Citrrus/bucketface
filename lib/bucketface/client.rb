@@ -98,6 +98,10 @@ module Bucketface
       get("/repositories/#{repo.user}/#{repo}/events/").events
     end
 
+    def groups(login=self.login)
+      get("/groups/{login}/")
+    end
+
     private
     def get(path, options = {})
       Hashie::Mash.new(self.class.get(path, options))
