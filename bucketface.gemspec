@@ -3,16 +3,16 @@ $:.push File.expand_path("../lib", __FILE__)
 require "bucketface/version"
 
 Gem::Specification.new do |s|
-  s.name        = "bucketface"
+  s.name        = "bucketface2"
   s.version     = Bucketface::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["Rafael George"]
-  s.email       = ["george.rafael@gmail.com"]
+  s.authors     = ["Rafael George", "Jon Willis"]
+  s.email       = ["george.rafael@gmail.com", "jondwillis@gmail.com"]
   s.homepage    = ""
   s.summary     = %q{Provides a wrapper for Bitbucket API}
   s.description = %q{Provides a wrapper for Bitbucket API}
 
-  s.rubyforge_project = "bucketface"
+  s.rubyforge_project = "bucketface2"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
